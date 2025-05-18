@@ -50,7 +50,7 @@ h1 {
 }
 
 
-#menu li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -83,10 +83,16 @@ nav {
 }
 /* main */
 main {
-    background-color: lightblue;
     flex: 1 0 auto;
     /* make sure the main content takes up the remaining space to push footer down*/
     margin-top: 47px;
+}
+
+/*Hero section*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /* footer */
@@ -101,6 +107,7 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger */
@@ -118,7 +125,7 @@ main {
         display: flex;
     }
 
-    #menu li {
+    #menu > li {
         padding-left: 1rem;
     }
 
